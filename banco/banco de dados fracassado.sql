@@ -1,0 +1,22 @@
+select 
+    Aluno.NOME_ALUNO, 
+    Curso.NOME_CURSO
+from
+    Matricula
+join
+    Aluno ON Matricula.CODIGO_ALUNO = Aluno.CODIGO_ALUNO
+join
+    Curso ON Matricula.CODIGO_CURSO = Curso.CODIGO_CURSO
+order by
+    Curso.NOME_CURSO;
+
+ 
+select
+	Email 
+from 
+	aluno
+
+select count(codigo_aluno)
+from aluno
+
+select nome_aluno,
